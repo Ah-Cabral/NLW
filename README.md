@@ -9,12 +9,12 @@ as aplicações React, independente de onde ela seja apresentada, tendo em vista
 
 O projeto à ser desenvolvido na Next Level Week #4 é o Move.it.
 
-[Contextualizando]
+#### [Contextualizando]
 
 Já parou pra pensar que você passa às vezes até 20 horas na frente de um computador, e esquece-se de alongar-se, descansar a visão, comer (haha).
 Hoje em dia é mais normal ver que os devs estão tendo problemas de saúde mais constantes devido ao fato de não perceberem o que estão "fazendo".
 
-[Exemplo Teórico: Técnica de Pomodoro]
+#### [Exemplo Teórico: Técnica de Pomodoro]
 
 A Técnica Pomodoro é um método de gerenciamento de tempo desenvolvido por Francesco Cirillo no final dos anos 1980. 
 A técnica consiste na utilização de um cronômetro para dividir o trabalho em períodos de 25 minutos, separados por breves intervalos.
@@ -25,3 +25,15 @@ Exemplo:
 
 Você irá trabalhar por 25 minutos e após esse intervalo de tempo, você será notificado e receberá uma tarefa.
 Essa tarefa valerá uma certa quantidade de experiência, que fará você subir níveis, que poderão ser compartilhados.
+
+#### O que é React?
+
+React é um biblioteca de criação de interfaces altamente fluida e performática. Costuma-se dizer que React é altamente reativa,
+devido ao fato de que conseguimos criar interfaces reativas às ações do usuário.
+
+[Exemplo] Se uma interface possui o botão de deletar algo, e esse botão é clicado, o React envia 
+a mensagem para o back-end (onde ocorre a deleção da informação no banco de dados) e, sem recarregar a página, 
+faz com que o conteúdo suma da tela.
+
+Esse importante recurso em react faz com que seja possível reaproveitar os elementos semelhantes entre 
+às telas intactos, sem a necessidade de um novo carregamento.
