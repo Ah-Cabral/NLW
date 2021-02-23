@@ -2,6 +2,8 @@ import Document, { Html, Head, Main, NextScript} from 'next/document';
 
 export default class MyDocument extends Document{
     render(){
+        //As fontes foram carregadar no _document.tsx devido ao fato dele carregar apenas
+        //uma vez, então indendente de o quanto o usuário acesse a aplicação, ele carregará o document apenas uma vez.
         return(
             <Html>
                 <Head>
