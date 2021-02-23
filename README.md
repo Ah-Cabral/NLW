@@ -46,7 +46,25 @@ Ele traz um conjunto de atividades que são muito comuns em aplicações React.
 #### Qual o motivo de utilizarmos o next?
 
 Um dos pontos importantes do Next.js é que ele habilita trabalhar com as 3 siglas 
-mais famosas do desenvolvimento front-end hoje em dia.
+mais famosas do desenvolvimento front-end hoje em dia:
 
-SPA / SSR / SSG
+#### SPA / SSR / SSG
+
+### SPA: Single Page Aplication
+
+Quando utilizamos o create react-app, utilizamos o conceito de SPA, 
+ou seja uma aplicação de uma só página.
+
+O SPA funciona da seguinte forma: Toda a interface é construída no front-end, e quando
+muda-se de uma rota para outra, mantém-se as coisas que são repetitíveis na rota
+e muda-se apenas o que é característico da rota (o conteúdo).
+
+Single Page Aplication: 1 Página, onde apenas o conteúdo muda, 
+mas os componentes repetitíveis permanecem.
+
+-Ponto Negativo: Não irá funcionar caso o JavaScript seja desabilitado, isso ocorre
+devido ao fato de tudo ser feito no front-end.
+
+Com isso, o Next.js surge para inicialmente fazer com que nossas aplicações React sejam
+indexadas por motores de busca.
 
