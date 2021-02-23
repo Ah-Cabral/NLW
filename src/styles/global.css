@@ -13,6 +13,16 @@
   --blue-twitter: #2aa9e0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+  border: none;
+  outline: none;
+  list-style: none;
+}
+
 @media (max-width: 1080px) {
   html {
     font-size: 93.75%;
@@ -23,13 +33,6 @@
   html {
     font-size: 87.5%;
   }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Inter, sans-serif;
 }
 
 body {
