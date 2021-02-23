@@ -1,19 +1,19 @@
-import { Button } from './components/Button'
+import { ExperienceBar } from './components/ExperienceBar';
+import './styles/global.css';
 
 //Componentes São formas de conseguirmos isolar um pedaço de código
 //à fim de deixar o código mais legível. 
 //Também é uma forma reaproveitar partes de código.
 function App() {
-  return (
+  
+  return(
     
     //No react não podem-se ter
     //diversos elementos juntos, se esses não estiverem dentro de outro.
     //Nesse caso, os buttons estão dentro de uma div.
 
-    <div>
-      <Button color = 'red'/>
-      <Button color = 'blue'/>
-      <Button color = 'green'/>
+    <div className='container'>
+      <ExperienceBar />
     </div>
     
   );
