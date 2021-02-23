@@ -1,0 +1,43 @@
+.profileContainer {
+  /*Defininfo display do container*/
+  display: flex;
+  /*Defininfo alinhamento dos items no display*/
+  align-items: center;
+}
+
+.profileContainer > img {
+  /*Defininfo largura da imagem*/
+  width: 5.5rem;
+  /*Defininfo altura da imagem*/
+  height: 5.5rem;
+  /*Defininfo raio da imagem, que caracterizará um circulo*/
+  border-radius: 50%;
+}
+
+.profileContainer div {
+  /*Definindo margem que ficará à esquerda da div, distanciando-se da imagem*/
+  margin-left: 1.5rem;
+}
+
+.profileContainer strong {
+  /*Defininfo qual será o tamanho da fonte strong*/
+  font-size: 1.5rem;
+  /*Defininfo qual será o peso da fonte*/
+  font-weight: 600;
+  /*Defininfo qual será a cor da fonte*/
+  color: var(--title);
+}
+
+.profileContainer div p {
+  /*Defininfo qual será o tamanho da fonte strong*/
+  font-size: 1.5rem;
+  /*Definindo margin top que será aplicada na fonte*/
+  margin-top: 0.5rem;
+}
+
+.profileContainer div p img {
+  /*Defininfo qual será o tamanho da fonte strong*/
+  font-size: 1.5rem;
+  /*Definindo margin right que será aplicada na fonte*/
+  margin-right: 0.5rem;
+}
