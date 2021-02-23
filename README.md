@@ -37,3 +37,16 @@ faz com que o conteúdo suma da tela.
 
 Esse importante recurso em react faz com que seja possível reaproveitar os elementos semelhantes entre 
 às telas intactos, sem a necessidade de um novo carregamento.
+
+## Dia 2 (23-02-2021) - Next.js :
+
+O Next.js pode ser considerado um framework em cima do React(Biblioteca de Construção de Interfaces).
+Ele traz um conjunto de atividades que são muito comuns em aplicações React.
+
+#### Qual o motivo de utilizarmos o next?
+
+Um dos pontos importantes do Next.js é que ele habilita trabalhar com as 3 siglas 
+mais famosas do desenvolvimento front-end hoje em dia.
+
+SPA / SSR / SSG
+
