@@ -43,6 +43,11 @@ Esse importante recurso em react faz com que seja possível reaproveitar os elem
 O Next.js pode ser considerado um framework em cima do React(Biblioteca de Construção de Interfaces).
 Ele traz um conjunto de atividades que são muito comuns em aplicações React.
 
+No Geral, o Next.js é uma camada intermediária entre o back-end e o front-end, responsável por construir a interface
+da nossa aplicação através de um servidor (camada intermediára) para que, quando o usuário acessar a aplicação,
+a interface já esteja pronta.
+
+
 #### Qual o motivo de utilizarmos o next?
 
 Um dos pontos importantes do Next.js é que ele habilita trabalhar com as 3 siglas 
