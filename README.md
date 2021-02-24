@@ -16,7 +16,7 @@ Hoje em dia é mais normal ver que os devs estão tendo problemas de saúde mais
 
 #### [Exemplo Teórico: Técnica de Pomodoro]
 
-A Técnica Pomodoro é um método de gerenciamento de tempo desenvolvido por Francesco Cirillo no final dos anos 1980. 
+A Técnica Pomodoro é um método de gerenciamento de tempo desenvolvido por Francesco Cirillo no final dos anos 1980.
 A técnica consiste na utilização de um cronômetro para dividir o trabalho em períodos de 25 minutos, separados por breves intervalos.
 
 O Move.it possui essa mesma pegada, ele une a técnica de pomodoro à aplicação.
@@ -31,11 +31,11 @@ Essa tarefa valerá uma certa quantidade de experiência, que fará você subir 
 React é um biblioteca de criação de interfaces altamente fluida e performática. Costuma-se dizer que React é altamente reativa,
 devido ao fato de que conseguimos criar interfaces reativas às ações do usuário.
 
-[Exemplo] Se uma interface possui o botão de deletar algo, e esse botão é clicado, o React envia 
-a mensagem para o back-end (onde ocorre a deleção da informação no banco de dados) e, sem recarregar a página, 
+[Exemplo] Se uma interface possui o botão de deletar algo, e esse botão é clicado, o React envia
+a mensagem para o back-end (onde ocorre a deleção da informação no banco de dados) e, sem recarregar a página,
 faz com que o conteúdo suma da tela.
 
-Esse importante recurso em react faz com que seja possível reaproveitar os elementos semelhantes entre 
+Esse importante recurso em react faz com que seja possível reaproveitar os elementos semelhantes entre
 às telas intactos, sem a necessidade de um novo carregamento.
 
 ## Dia 2 (23-02-2021) - Next.js :
@@ -47,24 +47,23 @@ No Geral, o Next.js é uma camada intermediária entre o back-end e o front-end,
 da nossa aplicação através de um servidor (camada intermediára) para que, quando o usuário acessar a aplicação,
 a interface já esteja pronta.
 
-
 #### Qual o motivo de utilizarmos o next?
 
-Um dos pontos importantes do Next.js é que ele habilita trabalhar com as 3 siglas 
+Um dos pontos importantes do Next.js é que ele habilita trabalhar com as 3 siglas
 mais famosas do desenvolvimento front-end hoje em dia:
 
 #### SPA / SSR / SSG
 
 ### SPA: Single Page Aplication
 
-Quando utilizamos o create react-app, utilizamos o conceito de SPA, 
+Quando utilizamos o create react-app, utilizamos o conceito de SPA,
 ou seja uma aplicação de uma só página.
 
 O SPA funciona da seguinte forma: Toda a interface é construída no front-end, e quando
 muda-se de uma rota para outra, mantém-se as coisas que são repetitíveis na rota
 e muda-se apenas o que é característico da rota (o conteúdo).
 
-Single Page Aplication: 1 Página, onde apenas o conteúdo muda, 
+Single Page Aplication: 1 Página, onde apenas o conteúdo muda,
 mas os componentes repetitíveis permanecem.
 
 -Ponto Negativo: Não irá funcionar caso o JavaScript seja desabilitado, isso ocorre
@@ -75,16 +74,16 @@ indexadas por motores de busca.
 
 ### SSR: Server Side Rendering
 
-É o processo de pegar todos os Javascript e todos os CSS de um site que, 
+É o processo de pegar todos os Javascript e todos os CSS de um site que,
 geralmente é carregado no browser (client-side), e renderizá-los como estático do lado do servidor.
 
-Com isso podemos obter um site com um tempo de carregamento reduzido 
+Com isso podemos obter um site com um tempo de carregamento reduzido
 e totalmente indexável por SEO’s (Search Engine Optimizations / Otimização para motores de busca).
 
 ### SSR: Static Site Generator
 
-O site estático é hospedado no servidor como ele é e, quando requisitado, é enviado para o usuário final. 
-Essa hospedagem precisa de muito menos processador, memória e talvez até mesmo espaço em disco. 
+O site estático é hospedado no servidor como ele é e, quando requisitado, é enviado para o usuário final.
+Essa hospedagem precisa de muito menos processador, memória e talvez até mesmo espaço em disco.
 
 Porém, imagine que o seu site é requisitado diversas vezes por minuto ou por segundo, cada requisição vai fazer
 com que, a cada requisição, seja feita uma chamada no back-end que retornará sempre a mesma coisa.
@@ -94,3 +93,7 @@ Para esses casos, o Next.js faz com que, ao acessar a página estática (ou a p�
 ele crie arquivos estáticos de HTML, CSS e JS, e todo mundo que acessar a página em um intervalo de tempo definido receberão
 esses arquivos estáticos. O Next.js faz esse processo de forma automática.
 
+## Dia 3 (24-02-2021) - Context API :
+
+Context API (API de contextos do React). Contextos são formas
+de fazermos a comunicação entre os vários componentes da minha aplicação.
