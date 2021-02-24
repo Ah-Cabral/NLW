@@ -8,7 +8,7 @@ import styles from '../styles/components/Countdown.module.css'
 export function Countdown(){
 
     //Declarando por desestruturação os elementos time e setTime
-    const [time, setTime] = useState(25 * 60);
+    const [time, setTime] = useState(0.05 * 60);
 
     //Declarando por desestruturação os elementos time e setTime
     const [isActive, setIsActive] = useState(false);
@@ -59,7 +59,7 @@ export function Countdown(){
         setIsActive(false);
 
         //E irá mudar o tempo dos minutos para o tempo inicial
-        setTime(25 * 60);
+        setTime(0.05 * 60);
 
     }
 
