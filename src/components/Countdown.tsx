@@ -1,11 +1,14 @@
 //Importando useState e useEffect
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
+import { ChallengesContext } from '../contexts/ChallengesContext';
 
 //Importando styles
 import styles from '../styles/components/Countdown.module.css'
 
 //Exportando a função (Componente) Countdown 
 export function Countdown(){
+
+    const { startNewChallenge } = useContext(ChallengesContext);
 
     //Declarando por desestruturação os elementos time e setTime
     const [time, setTime] = useState(0.05 * 60);
@@ -47,6 +50,7 @@ export function Countdown(){
         }else if(isActive && time == 0){
             setHasFinished(true);
             setIsActive(false);
+            startNewChallenge();
         }
     }, [isActive, time]);
 
