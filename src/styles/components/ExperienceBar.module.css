@@ -9,6 +9,7 @@
 
 .experienceBar > div {
   flex: 1;
+  position: relative;
   height: 4px;
   border-radius: 4px;
   background: var(--gray-line);
@@ -22,6 +23,8 @@
 }
 
 .experienceBar > div span.currentExperience {
+  margin: 0.5rem;
+  font-size: 0.85rem;
   position: absolute;
   transform: translateX(-80%);
 }
