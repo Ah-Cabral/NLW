@@ -1,7 +1,7 @@
 import { createContext, ReactNode, useContext, useEffect, useState } from "react";
 import { ChallengesContext } from "./ChallengesContext";
 
-interface CountdownContextData{
+interface CountdownContextData {
     minutes: number,
     seconds: number,
     hasFinished: boolean,
@@ -10,14 +10,14 @@ interface CountdownContextData{
     resetCountdown: () => void,
 }
 
-interface CountdownProviderProps{
+interface CountdownProviderProps {
     children: ReactNode;
 }
 
 export const CountdownContext = createContext({} as CountdownContextData);
 
-export function CountdownProvider({children}: CountdownProviderProps){
-    
+export function CountdownProvider({ children }: CountdownProviderProps) {
+
     const { startNewChallenge } = useContext(ChallengesContext);
 
     //Declarando por desestruturação os elementos time e setTime
@@ -29,21 +29,21 @@ export function CountdownProvider({children}: CountdownProviderProps){
     const [hasFinished, setHasFinished] = useState(false);
 
     //Declarando constante referente aos minutos, que irá fazer o cálculo dos mins e arredondar p/ baixo
-    const minutes = Math.floor(time/60);
+    const minutes = Math.floor(time / 60);
 
     //Declarando constante referente aos segundos
     const seconds = time % 60;
 
-    
+
     //Iniciando função startCountdown, que irá mudar o valor do secAtive para true
-    function startCountdown(){
+    function startCountdown() {
         setIsActive(true);
     }
 
     let countdownTimeout: NodeJS.Timeout;
 
     //Criando função que irá resetar o Countdown
-    function resetCountdown(){
+    function resetCountdown() {
         //Ele irá limpar o tempo definido no Timeout
         clearTimeout(countdownTimeout);
 
@@ -58,21 +58,21 @@ export function CountdownProvider({children}: CountdownProviderProps){
     }
 
     //Utilizando o hook useEffect (Responsável por lidar com efeitos)
-    useEffect(() =>{
+    useEffect(() => {
         //Fazendo verificação se o active e o time são maiores do que zero
-        if(isActive && time > 0){
+        if (isActive && time > 0) {
             //Utilizando serTimeout e definindo tempo de 1 segundo
-            countdownTimeout = setTimeout(() =>{
+            countdownTimeout = setTimeout(() => {
                 setTime(time - 1); //Modificando tempo para tempo -1
             }, 1000)
-        }else if(isActive && time == 0){
+        } else if (isActive && time == 0) {
             setHasFinished(true);
             setIsActive(false);
             startNewChallenge();
         }
     }, [isActive, time]);
 
-    return(
+    return (
         <CountdownContext.Provider value={{
             minutes,
             seconds,
