@@ -97,3 +97,21 @@ esses arquivos estáticos. O Next.js faz esse processo de forma automática.
 
 Context API (API de contextos do React). Contextos são formas
 de fazermos a comunicação entre os vários componentes da minha aplicação.
+
+## Dia 5 (26-02-2021) - Local Storage | Session Storage | IndexedDB | Cookies:
+
+### Local Storage
+
+É um storage de chave: valor, onde só é possível armazenar dados de texto. Ou seja, tudo que é armazenado no Local Storage é texto. Uma das boa característicar do Local Storage é que ele se mantém, mesmo quando a página é atualizada ou o navegador é fechado.
+
+### Session Storage
+
+Possui basicamente as mesmas características do Local Storage, porém a diferença entre esses dois é que o Session Storage tem seus dados perdidos na Sessão. Ou seja, os dados permanecem apenas enquanto o navegador está aberto. Caso o navegador seja fechado, o browser seja atualizado ou fechado, ele não armazenará os dados.
+
+### IndexedDB
+
+É um banco de dados mais completo. (Não foi comentado profundamente na aula)
+
+### Cookies
+
+Uma das formas mais antigas de poder armazenar dados em uma aplicação. Eles funcionam de uma maneira muito semelhante ao Local Storage. É muito utilizado junto ao nextJS.
